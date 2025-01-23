@@ -1,27 +1,27 @@
 ﻿[
   {
     "name": "Fluffy",
-    "species": "Cat",
+    "species": "Katt",
     "age": 3
   },
   {
     "name": "Bubbles",
-    "species": "Fish",
+    "species": "Fisk",
     "age": 1
   },
   {
     "name": "Chirpy",
-    "species": "Bird",
+    "species": "Fågel",
     "age": 2
   },
   {
     "name": "Rex",
-    "species": "Dog",
+    "species": "Hund",
     "age": 5
   },
   {
     "name": "Spike",
-    "species": "Hedgehog",
+    "species": "Igelkott",
     "age": 4
   }
 ]

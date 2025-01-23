@@ -1,6 +1,11 @@
-﻿@page "/"
+﻿@using Blazor1.Shared
+@page "/"
 
 <PageTitle>Hem</PageTitle>
 
-<h1>Välkommen till min webbplats!</h1>
-<p>Här är innehållet på min sida... Happy reading!</p>
+<h1 class="intro text mt-4 mb-4">Välkommen!</h1>
+<p>Här nedan är en komponent med lite kort info och finns även på om-sidan.<br>
+    På konvertera-sidan kan du konvertera meter till fot och km/h till miles/hour.<br>
+    På om-sidan finns en lista med lite djur som hämtas med http-anrop från en JSON-fil.</p>
+
+<Info />

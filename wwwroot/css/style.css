@@ -110,6 +110,38 @@ main {
     font-weight: bold;
 }
 
+.info-box {
+    background-color: #f0f8ff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Komponenten */
+.info-box h2,
+.info-box h3 {
+    margin: 10px;
+}
+
+.info-box p,
+.info-box blockquote {
+    font-size: 1em;
+    line-height: 1.5;
+    max-width: 65ch;
+}
+
+.info-box blockquote {
+    margin-top: 10px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.animal-list {
+    list-style: none;
+}
+
 /* Responsiv layout */
 @media (max-width: 600px) {
     .conversion-container {

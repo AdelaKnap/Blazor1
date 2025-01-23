@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2s6lvn05t2</Fingerprint>
-      <Integrity>kpDqODeZ2WV4K0Mc1rjnYH0Ni1CHIOB5D/9zY6KLOew=</Integrity>
+      <Fingerprint>choraur3fb</Fingerprint>
+      <Integrity>sKY/GgiluWVbJ8RLXhooArLjz6BW49FTV09NLbW+Wl4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\style.css'))</OriginalItemSpec>
@@ -876,8 +876,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>s8n4y6n45a</Fingerprint>
-      <Integrity>VAdVNeMn2JPh6/ahDAx2epMOsxcBR7IhiQtLM4mIesk=</Integrity>
+      <Fingerprint>zob521pub2</Fingerprint>
+      <Integrity>jT8nEkJ1GCTyNSiLAvoy24THyYt/5eVFyslzAD+uOQU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\sample-data\animals.json'))</OriginalItemSpec>

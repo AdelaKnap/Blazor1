@@ -1,6 +1,48 @@
+@using Blazor1.Shared
 @page "/om"
+@inject HttpClient Http
 
 <PageTitle>Om</PageTitle>
 
-<h1>Om sidan!</h1>
-<p>Lite text</p>
+<h1 class="text mt-4 mb-4">Om sidan</h1>
+
+<Info />
+
+<h2 class="text mb-4 mt-5">Några djur</h2>
+
+@if (Animals == null)
+{
+    <p>Laddar...</p>
+}
+else
+{
+    <ul>
+        @foreach (var animal in Animals) // Loopa igenom listan med djur
+        {
+            <li class="animal-list text mb-3">
+                <strong>@animal.Name</strong> - Art: @animal.Species, Ålder: @animal.Age år
+            </li>
+        }
+    </ul>
+}
+
+@code {
+
+    // Klass/model för animlas
+    public class Animal
+    {
+        public string? Name { get; set; }
+        public string? Species { get; set; }
+        public int? Age { get; set; }
+    }
+
+    // Lista med djuren
+    private List<Animal>? Animals;
+
+    // Http-anrop, vid laddning hämtas JSON-data från filen
+    protected override async Task OnInitializedAsync()
+    {
+        // Läs JSON från filen och spara i listan
+        Animals = await Http.GetFromJsonAsync<List<Animal>>("sample-data/animals.json");
+    }
+}

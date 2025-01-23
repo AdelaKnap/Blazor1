@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Skola/Blazor1/Shared/Info.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEluZm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Skola/Blazor1/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
