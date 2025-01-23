@@ -197,8 +197,8 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Skola\\Blazor1\\wwwroot\\sample-data\\weather.json",
-      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+      "Id": "C:\\Skola\\Blazor1\\wwwroot\\sample-data\\animals.json",
+      "PackagePath": "staticwebassets\\sample-data\\animals.json"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.Blazor1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

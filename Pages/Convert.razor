@@ -3,4 +3,52 @@
 <PageTitle>Konvertera</PageTitle>
 
 <h1>Konvertera mera!</h1>
-<p>Från meter till fot</p>
+
+<div class="conversion-container">
+
+    <!-- Meter till fot -->
+    <div class="conversion-card">
+        <p><strong>Konvertera meter till fot</strong></p>
+        <label for="meters">Ange meter:</label>
+        <input type="number" id="meters" @bind="MetersInput" class="input-field" />
+        <button @onclick="MetersToFeet" class="convert-button">Konvertera</button>
+        @if (!string.IsNullOrEmpty(MetersResult))
+        {
+            <p class="result">Resultat: @MetersResult</p>
+        }
+    </div>
+
+    <!-- Km till miles -->
+    <div class="conversion-card">
+        <p><strong>Konvertera km/h till miles/hour</strong></p>
+        <label for="kmh">Ange km/h:</label>
+        <input type="number" id="kmh" @bind="KmInput" class="input-field" />
+        <button @onclick="KmToMiles" class="convert-button">Konvertera</button>
+        @if (!string.IsNullOrEmpty(KmResult))
+        {
+            <p class="result">Resultat: @KmResult</p>
+        }
+    </div>
+</div>
+
+@code {
+    private double MetersInput { get; set; }
+    private string? MetersResult { get; set; }
+
+    private double KmInput { get; set; }
+    private string? KmResult { get; set; }
+
+    // Metod för att konvertera meter till fot
+    private void MetersToFeet()
+    {
+        double feet = MetersInput * 3.28084; // 1 meter = 3.28084 feet
+        MetersResult = $"{feet:F2} fot"; // Avrunda till två decimaler
+    }
+
+    // Metod för att konvertera km till miles
+    private void KmToMiles()
+    {
+        double miles = KmInput * 0.621371; // 1 km/h = 0.621371 miles/hour
+        KmResult = $"{Math.Round(miles)} miles/hour"; // Avrunda till heltal
+    }
+}
